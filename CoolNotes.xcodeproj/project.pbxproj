@@ -14,6 +14,8 @@
 		4970EB4D1E12FDA2003A17A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4970EB4B1E12FDA2003A17A9 /* LaunchScreen.storyboard */; };
 		4970EB581E12FDA2003A17A9 /* CoolNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB571E12FDA2003A17A9 /* CoolNotesTests.swift */; };
 		4970EB631E12FDA2003A17A9 /* CoolNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB621E12FDA2003A17A9 /* CoolNotesUITests.swift */; };
+		4970EB721E12FDC7003A17A9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */; };
+		4970EB741E130B53003A17A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB731E130B53003A17A9 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4970EB5E1E12FDA2003A17A9 /* CoolNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4970EB621E12FDA2003A17A9 /* CoolNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolNotesUITests.swift; sourceTree = "<group>"; };
 		4970EB641E12FDA2003A17A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4970EB731E130B53003A17A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		4970EB361E12FDA1003A17A9 = {
 			isa = PBXGroup;
 			children = (
+				4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */,
 				4970EB411E12FDA2003A17A9 /* CoolNotes */,
 				4970EB561E12FDA2003A17A9 /* CoolNotesTests */,
 				4970EB611E12FDA2003A17A9 /* CoolNotesUITests */,
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				4970EB421E12FDA2003A17A9 /* AppDelegate.swift */,
+				4970EB731E130B53003A17A9 /* CoreDataStack.swift */,
 				4970EB441E12FDA2003A17A9 /* ViewController.swift */,
 				4970EB461E12FDA2003A17A9 /* Main.storyboard */,
 				4970EB491E12FDA2003A17A9 /* Assets.xcassets */,
@@ -264,6 +270,8 @@
 			files = (
 				4970EB451E12FDA2003A17A9 /* ViewController.swift in Sources */,
 				4970EB431E12FDA2003A17A9 /* AppDelegate.swift in Sources */,
+				4970EB721E12FDC7003A17A9 /* Model.xcdatamodeld in Sources */,
+				4970EB741E130B53003A17A9 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +540,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4970EB371E12FDA1003A17A9 /* Project object */;
 }
