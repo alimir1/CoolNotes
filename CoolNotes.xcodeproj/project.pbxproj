@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4970EB431E12FDA2003A17A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB421E12FDA2003A17A9 /* AppDelegate.swift */; };
-		4970EB451E12FDA2003A17A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB441E12FDA2003A17A9 /* ViewController.swift */; };
 		4970EB481E12FDA2003A17A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4970EB461E12FDA2003A17A9 /* Main.storyboard */; };
 		4970EB4A1E12FDA2003A17A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4970EB491E12FDA2003A17A9 /* Assets.xcassets */; };
 		4970EB4D1E12FDA2003A17A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4970EB4B1E12FDA2003A17A9 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		4970EB851E144B3F003A17A9 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB811E144B3F003A17A9 /* Note+CoreDataProperties.swift */; };
 		4970EB861E144B3F003A17A9 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB821E144B3F003A17A9 /* Notebook.swift */; };
 		4970EB871E144B3F003A17A9 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */; };
+		4970EB891E1452D7003A17A9 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB881E1452D7003A17A9 /* CoreDataTableViewController.swift */; };
+		4970EB8B1E1453DB003A17A9 /* NotebooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB8A1E1453DB003A17A9 /* NotebooksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 /* Begin PBXFileReference section */
 		4970EB3F1E12FDA2003A17A9 /* CoolNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4970EB421E12FDA2003A17A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4970EB441E12FDA2003A17A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4970EB471E12FDA2003A17A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4970EB491E12FDA2003A17A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4970EB4C1E12FDA2003A17A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +59,8 @@
 		4970EB811E144B3F003A17A9 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "../Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4970EB821E144B3F003A17A9 /* Notebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notebook.swift; path = ../Notebook.swift; sourceTree = "<group>"; };
 		4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataProperties.swift"; path = "../Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4970EB881E1452D7003A17A9 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		4970EB8A1E1453DB003A17A9 /* NotebooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				4970EB421E12FDA2003A17A9 /* AppDelegate.swift */,
-				4970EB771E130DA4003A17A9 /* Model */,
-				4970EB441E12FDA2003A17A9 /* ViewController.swift */,
-				4970EB461E12FDA2003A17A9 /* Main.storyboard */,
-				4970EB491E12FDA2003A17A9 /* Assets.xcassets */,
-				4970EB4B1E12FDA2003A17A9 /* LaunchScreen.storyboard */,
-				4970EB4E1E12FDA2003A17A9 /* Info.plist */,
+				4970EB771E130DA4003A17A9 /* Models */,
+				4970EB8C1E14552F003A17A9 /* Controllers */,
+				4970EB8D1E145546003A17A9 /* Assets */,
+				4970EB8E1E145577003A17A9 /* Supporting Files */,
 			);
 			path = CoolNotes;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			path = CoolNotesUITests;
 			sourceTree = "<group>";
 		};
-		4970EB771E130DA4003A17A9 /* Model */ = {
+		4970EB771E130DA4003A17A9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */,
@@ -148,7 +148,34 @@
 				4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */,
 				4970EB751E130C2E003A17A9 /* CoreDataStack.swift */,
 			);
-			name = Model;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4970EB8C1E14552F003A17A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4970EB881E1452D7003A17A9 /* CoreDataTableViewController.swift */,
+				4970EB8A1E1453DB003A17A9 /* NotebooksViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4970EB8D1E145546003A17A9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4970EB461E12FDA2003A17A9 /* Main.storyboard */,
+				4970EB491E12FDA2003A17A9 /* Assets.xcassets */,
+				4970EB4B1E12FDA2003A17A9 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		4970EB8E1E145577003A17A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4970EB4E1E12FDA2003A17A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,13 +316,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4970EB871E144B3F003A17A9 /* Notebook+CoreDataProperties.swift in Sources */,
-				4970EB451E12FDA2003A17A9 /* ViewController.swift in Sources */,
+				4970EB8B1E1453DB003A17A9 /* NotebooksViewController.swift in Sources */,
 				4970EB431E12FDA2003A17A9 /* AppDelegate.swift in Sources */,
 				4970EB841E144B3F003A17A9 /* Note.swift in Sources */,
 				4970EB721E12FDC7003A17A9 /* Model.xcdatamodeld in Sources */,
 				4970EB861E144B3F003A17A9 /* Notebook.swift in Sources */,
 				4970EB761E130C2E003A17A9 /* CoreDataStack.swift in Sources */,
 				4970EB851E144B3F003A17A9 /* Note+CoreDataProperties.swift in Sources */,
+				4970EB891E1452D7003A17A9 /* CoreDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

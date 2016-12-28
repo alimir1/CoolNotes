@@ -18,6 +18,6 @@ extension Note {
 
     @NSManaged public var creationDate: Date?
     @NSManaged public var text: String?
-    @NSManaged public var notebook: Notebook?
+    @NSManaged public var notebook: NSManagedObject?
 
 }

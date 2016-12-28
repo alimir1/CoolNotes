@@ -1,8 +1,8 @@
 //
 //  CoreDataStack.swift
 //
-//  Created by Fernando Rodríguez Romero on 21/02/16.
-//  Copyright © 2016 udacity.com. All rights reserved.
+//  Created by Ali Mir on 12/28/16.
+//  Copyright © 2016 com.AliMir. All rights reserved.
 //
 
 import CoreData
