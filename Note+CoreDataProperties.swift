@@ -16,8 +16,8 @@ extension Note {
         return NSFetchRequest<Note>(entityName: "Note");
     }
 
-    @NSManaged public var creationDate: NSDate?
-    @NSManaged public var name: String?
+    @NSManaged public var creationDate: Date?
+    @NSManaged public var text: String?
     @NSManaged public var notebook: Notebook?
 
 }

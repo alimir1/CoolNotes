@@ -16,9 +16,9 @@
 		4970EB631E12FDA2003A17A9 /* CoolNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB621E12FDA2003A17A9 /* CoolNotesUITests.swift */; };
 		4970EB721E12FDC7003A17A9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */; };
 		4970EB761E130C2E003A17A9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB751E130C2E003A17A9 /* CoreDataStack.swift */; };
-		4970EB841E144B3F003A17A9 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB801E144B3F003A17A9 /* Note+CoreDataClass.swift */; };
+		4970EB841E144B3F003A17A9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB801E144B3F003A17A9 /* Note.swift */; };
 		4970EB851E144B3F003A17A9 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB811E144B3F003A17A9 /* Note+CoreDataProperties.swift */; };
-		4970EB861E144B3F003A17A9 /* Notebook+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB821E144B3F003A17A9 /* Notebook+CoreDataClass.swift */; };
+		4970EB861E144B3F003A17A9 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB821E144B3F003A17A9 /* Notebook.swift */; };
 		4970EB871E144B3F003A17A9 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +55,9 @@
 		4970EB641E12FDA2003A17A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4970EB751E130C2E003A17A9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		4970EB801E144B3F003A17A9 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "../Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4970EB801E144B3F003A17A9 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
 		4970EB811E144B3F003A17A9 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "../Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4970EB821E144B3F003A17A9 /* Notebook+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataClass.swift"; path = "../Notebook+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4970EB821E144B3F003A17A9 /* Notebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notebook.swift; path = ../Notebook.swift; sourceTree = "<group>"; };
 		4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Notebook+CoreDataProperties.swift"; path = "../Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,6 @@
 		4970EB361E12FDA1003A17A9 = {
 			isa = PBXGroup;
 			children = (
-				4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */,
 				4970EB411E12FDA2003A17A9 /* CoolNotes */,
 				4970EB561E12FDA2003A17A9 /* CoolNotesTests */,
 				4970EB611E12FDA2003A17A9 /* CoolNotesUITests */,
@@ -142,9 +141,10 @@
 		4970EB771E130DA4003A17A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4970EB801E144B3F003A17A9 /* Note+CoreDataClass.swift */,
+				4970EB701E12FDC7003A17A9 /* Model.xcdatamodeld */,
+				4970EB801E144B3F003A17A9 /* Note.swift */,
 				4970EB811E144B3F003A17A9 /* Note+CoreDataProperties.swift */,
-				4970EB821E144B3F003A17A9 /* Notebook+CoreDataClass.swift */,
+				4970EB821E144B3F003A17A9 /* Notebook.swift */,
 				4970EB831E144B3F003A17A9 /* Notebook+CoreDataProperties.swift */,
 				4970EB751E130C2E003A17A9 /* CoreDataStack.swift */,
 			);
@@ -291,9 +291,9 @@
 				4970EB871E144B3F003A17A9 /* Notebook+CoreDataProperties.swift in Sources */,
 				4970EB451E12FDA2003A17A9 /* ViewController.swift in Sources */,
 				4970EB431E12FDA2003A17A9 /* AppDelegate.swift in Sources */,
-				4970EB841E144B3F003A17A9 /* Note+CoreDataClass.swift in Sources */,
+				4970EB841E144B3F003A17A9 /* Note.swift in Sources */,
 				4970EB721E12FDC7003A17A9 /* Model.xcdatamodeld in Sources */,
-				4970EB861E144B3F003A17A9 /* Notebook+CoreDataClass.swift in Sources */,
+				4970EB861E144B3F003A17A9 /* Notebook.swift in Sources */,
 				4970EB761E130C2E003A17A9 /* CoreDataStack.swift in Sources */,
 				4970EB851E144B3F003A17A9 /* Note+CoreDataProperties.swift in Sources */,
 			);
@@ -572,7 +572,8 @@
 				4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */,
 			);
 			currentVersion = 4970EB711E12FDC7003A17A9 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
