@@ -3,7 +3,7 @@
 //
 //
 //  Created by Ali Mir on 12/28/16.
-//  Copyright © 2016 com.AliMir. All rights reserved.
+//  Copyright © 2016 com.com.CoolNotes. All rights reserved.
 //
 
 import UIKit
@@ -32,7 +32,7 @@ class CoreDataTableViewController: UITableViewController {
         super.init(style: style)
     }
     
-    // Do not worry about this initializer. It has to be implemented
+    // Do not worry about this initializer. I has to be implemented
     // because of the way Swift interfaces with an Objective C
     // protocol called NSArchiving. It's not relevant.
     required init?(coder aDecoder: NSCoder) {
@@ -118,7 +118,7 @@ extension CoreDataTableViewController: NSFetchedResultsControllerDelegate {
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
-            
+        
         let set = IndexSet(integer: sectionIndex)
         
         switch (type) {

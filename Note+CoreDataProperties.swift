@@ -3,21 +3,19 @@
 //  CoolNotes
 //
 //  Created by Ali Mir on 12/28/16.
-//  Copyright © 2016 com.AliMir. All rights reserved.
+//  Copyright © 2016 com.com.CoolNotes. All rights reserved.
+//
+//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
+//  to delete and recreate this implementation file for your updated model.
 //
 
 import Foundation
 import CoreData
 
-
 extension Note {
-
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Note> {
-        return NSFetchRequest<Note>(entityName: "Note");
-    }
-
-    @NSManaged public var creationDate: Date?
-    @NSManaged public var text: String?
-    @NSManaged public var notebook: NSManagedObject?
-
+    
+    @NSManaged var creationDate: Date?
+    @NSManaged var text: String?
+    @NSManaged var notebook: NSManagedObject?
+    
 }

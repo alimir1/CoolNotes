@@ -1,8 +1,9 @@
 //
 //  CoreDataStack.swift
 //
+//
 //  Created by Ali Mir on 12/28/16.
-//  Copyright © 2016 com.AliMir. All rights reserved.
+//  Copyright © 2016 com.com.CoolNotes. All rights reserved.
 //
 
 import CoreData

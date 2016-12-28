@@ -3,14 +3,18 @@
 //  CoolNotes
 //
 //  Created by Ali Mir on 12/28/16.
-//  Copyright © 2016 com.AliMir. All rights reserved.
+//  Copyright © 2016 com.com.CoolNotes. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class NotebooksViewController: CoreDataTableViewController {
+// MARK: - NotebooksViewController: CoreDataTableViewController
 
+class NotebooksViewController: CoreDataTableViewController {
+    
+    // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,10 +33,16 @@ class NotebooksViewController: CoreDataTableViewController {
         // Create the FetchedResultsController
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
     }
-
+    
+    // MARK: TableView Data Source
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // Find the notebook
+        // This method must be implemented by our subclass. There's no way
+        // CoreDataTableViewController can know what type of cell we want to
+        // use.
+        
+        // Find the right notebook for this indexpath
         let nb = fetchedResultsController!.object(at: indexPath) as! Notebook
         
         // Create the cell
@@ -40,8 +50,18 @@ class NotebooksViewController: CoreDataTableViewController {
         
         // Sync notebook -> cell
         cell.textLabel?.text = nb.name
-        cell.detailTextLabel?.text = "\(nb.notes!.count) notes"
+        cell.detailTextLabel?.text = String(format: "%d notes", nb.notes!.count)
         
         return cell
     }
+    
+    // MARK: Navigation
+    
+    /*
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }
