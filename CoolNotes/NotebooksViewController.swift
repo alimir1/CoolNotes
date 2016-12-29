@@ -57,11 +57,25 @@ class NotebooksViewController: CoreDataTableViewController {
     
     // MARK: Navigation
     
-    /*
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
+        if segue.identifier! == "showNotes" {
+            if let notesVC = segue.destination as? NotesViewController {
+                // create fetch request
+                let fr = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+                fr.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false),NSSortDescriptor(key: "text", ascending: true)]
+                // So far we have a search that will match ALL notes. However, we're
+                // only interested in those within the current notebook:
+                // NSPredicate to the rescue!
+                let indexPath = tableView.indexPathForSelectedRow!
+                let notebook = fetchedResultsController?.object(at: indexPath)
+                let pred = NSPredicate(format: "notebook = %@", argumentArray: [notebook!])
+                fr.predicate = pred
+                let fc = NSFetchedResultsController(fetchRequest: fr, managedObjectContext:fetchedResultsController!.managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
+                // Inject it into the notesVC
+                notesVC.fetchedResultsController = fc
+            }
+        }
      }
-     */
 }
