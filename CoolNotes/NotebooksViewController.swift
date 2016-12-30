@@ -34,6 +34,14 @@ class NotebooksViewController: CoreDataTableViewController {
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fr, managedObjectContext: stack.context, sectionNameKeyPath: nil, cacheName: nil)
     }
     
+    // MARK: Actions
+    
+    @IBAction func addNotebook(_ sender: AnyObject) {
+        // Create a new notebook... and Core Data takes care of the rest!
+        let nb = Notebook(name: "New Notebook", context: fetchedResultsController!.managedObjectContext)
+        print("Just created a notebook: \(nb)")
+    }
+    
     // MARK: TableView Data Source
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
